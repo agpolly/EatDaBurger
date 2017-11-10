@@ -21,4 +21,4 @@ app.use('/', routes);
 app.set('view engine', 'handlebars');
 
 var port = 3000;
-app.listen(port);
+app.listen(process.env.PORT || port);
